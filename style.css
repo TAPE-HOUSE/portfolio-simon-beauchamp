@@ -1,0 +1,423 @@
+@font-face {
+    font-family: maxine;
+    src: url(Maxine\ Sans.otf);
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: maxine;
+    background-color: black;
+}
+
+/* NAV */
+
+nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-bottom: 2px solid white; */
+    height: 8vh;
+}
+
+.onglets a
+{
+    font-weight: 800;
+}
+
+.onglets a:hover
+{
+    border-bottom: 1px solid white;
+}
+
+
+nav h1
+{
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+nav .onglets
+{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+
+nav .onglets a
+{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    /* border-bottom: 1px solid white; */
+    padding-bottom: 5px;
+}
+
+.navhead
+{
+    background: url('photos/P4.JPG');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+/* HEADER */
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    height: 92vh;
+}
+
+header h2
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+header h4
+{
+    margin-top: 0px;
+    font-size: 30px;
+    /* border-bottom: 1px solid white; */
+}
+
+header button
+{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FF0000;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* PHOTOS */
+
+/* .titre-photos
+{
+    text-align: center;
+    font-size: 50px;
+}
+
+.photos
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photos .content .card
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.photos .content .card img
+{
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+.left
+{
+    flex: 0 0 30%;
+    background-color: black;
+    color: white;
+}
+
+
+
+.right1
+{
+    flex: 0 0 30%;
+    background-color: black;
+    color: white;
+} */
+
+.mesphotos
+{
+    background-color: white;
+    padding-top: 40px;
+}
+
+.titre-photos
+{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+
+.photos
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.photo
+{
+    margin: 20px 30px;
+}
+
+.photos h2
+{
+    color: black;
+    margin-top: 60px;
+}
+
+.img
+{
+    object-fit: cover;
+    /* width: 560px; 
+    height: 315px; */
+}
+
+/* VIDÉOS */
+
+.mesvideos
+{
+    background-color: black;
+    padding-top: 40px;
+}
+
+.titre-videos
+{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.videos
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.video
+{
+    margin: 20px 30px;
+}
+
+.videos h2
+{
+    color: white;
+    margin-top: 60px;
+}
+
+/* FOOTER */
+
+.trait
+{
+    height: 1px;
+    /* width: 100%; */
+    width: 80%;
+    background-color: white;
+}
+
+.mecontacter
+{
+    width: 20%;
+}
+
+.trait1
+{
+    height: 1px;
+    width: 70%;
+    background-color: white;
+}
+
+footer
+{
+    background-color: black;
+    padding: 40px 30px 10px 30px;
+}
+
+footer h1
+{
+    color: white;
+}
+
+.contacts
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.contacts h1
+{
+    font-size: 20px;
+}
+
+
+footer p
+{
+    color: white;
+}
+
+li
+{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+}
+
+a
+{
+    color: white;
+}
+
+li a
+{
+    color: white;
+    padding: 0 10px;
+    
+}
+
+.contact
+{
+    text-align: center;
+    margin: 0 20px;
+}
+
+.fb:hover
+{
+    color: #3B5998;
+}
+
+.insta:hover
+{
+    color:#C32AA3;
+}
+
+.twitter:hover
+{
+    color: #1DA1F2;
+}
+
+.yt:hover
+{
+    color: #FF0000;
+}
+
+.copyright
+{
+    font-size: 13px;
+    text-align: end;
+    padding-top: 40px;
+}
+
+iframe, .img
+{
+    width: 560px;
+    height: 315px;
+}
+
+/* ----------- RESPONSIVE ----------- */
+
+@media (max-width: 940px) {
+
+    nav
+    {
+        flex-direction: column;
+        height: 12vh;
+    }
+
+    .onglets 
+    {
+        margin-left: 0px !important;
+        margin-top: 10px !important;
+        /* border-bottom: 1px solid white; */
+    }
+    
+}
+
+@media screen and (max-width: 680px)
+{
+    nav .onglets
+    {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    iframe, .img
+    {
+        width: 450px;
+        height: 253px;
+    }
+
+    .mesphotos .photos .photo h2, .mesvideos .videos .video h2
+    {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 525px) {
+    iframe, .img
+    {
+        width: 350px;
+        height: 197px;
+    }
+}
+
+@media (max-width: 400px) {
+    iframe, .img
+    {
+        width: 300px;
+        height: 169px;
+    }
+
+    .titre-videos, .titre-photos, .name
+    {
+        font-size: 40px;
+    }
+
+    .mesphotos .photos .photo h2, .mesvideos .videos .video h2
+    {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    iframe, .img
+    {
+        width: 260px;
+        height: 146px;
+    }
+
+    .titre-videos, .titre-photos, .name
+    {
+        font-size: 35px;
+    }
+
+    .logo
+    {
+        font-size: 25px;
+    }
+
+    .onglets a 
+    {
+        font-size: 15px;
+    }
+}
